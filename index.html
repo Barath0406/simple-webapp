@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS CI/CD Demo</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg,#1e3c72,#2a5298);
+            color:white;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            background:rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding:40px;
+            border-radius:15px;
+            text-align:center;
+            width:80%;
+            max-width:700px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            margin-bottom:20px;
+            font-size:2.5rem;
+        }
+
+        p{
+            margin:10px 0;
+            font-size:1.2rem;
+        }
+
+        .version{
+            background:#28a745;
+            display:inline-block;
+            padding:10px 20px;
+            border-radius:25px;
+            margin-top:20px;
+            font-weight:bold;
+        }
+
+        .footer{
+            margin-top:25px;
+            font-size:14px;
+            opacity:0.8;
+        }
+
+        button{
+            margin-top:25px;
+            padding:12px 25px;
+            border:none;
+            border-radius:8px;
+            background:#ff9800;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#e68900;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🚀 AWS CI/CD Pipeline Demo</h1>
+
+        <p>Automated Deployment using:</p>
+
+        <p>
+            GitHub → CodePipeline → CodeBuild → EC2
+        </p>
+
+        <div class="version">
+            Version 1.0
+        </div>
+
+        <br>
+
+        <button onclick="showMessage()">
+            Check Deployment Status
+        </button>
+
+        <p id="status"></p>
+
+        <div class="footer">
+            DevOps Project | AWS CI/CD Automation
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("status").innerHTML =
+                "✅ Application deployed successfully!";
+        }
+    </script>
+
+</body>
+</html>
