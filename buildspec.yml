@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   secrets-manager:
-    SSH_KEY: "ec2-ssh-key"
+    SSH_KEY: "ec2-ssh-key:SSH_KEY"
 
 phases:
 
